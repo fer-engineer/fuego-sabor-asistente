@@ -1,0 +1,338 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: #181717;
+    background-color: #f8f6f4;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: .7rem;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url('/public/logo-restaurante.jpeg');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 600px auto;
+    background-color: #f8f6f4;
+    opacity: 1;
+}
+
+/* Eliminado: body:before { ... } */
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+#menu-categorias {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#mapa-ubicacion {
+    max-width: 900px;
+    min-width: 320px;
+    margin: 2rem auto 0;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #b8e0d244;
+    padding: 1.5rem 1.5rem 1.2rem;
+    background: #f7f6fa;
+}
+
+.menu-container {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin-top: 2.5rem;
+}
+
+.opciones-rapidas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.opciones-rapidas button {
+    background: #b8e0d2;
+    color: #3a3a3a;
+    border: none;
+    border-radius: 6px;
+    padding: .25em .7em;
+    font-size: .92em;
+    font-weight: 500;
+    letter-spacing: .2px;
+    cursor: pointer;
+    transition: background .2s, color .2s, box-shadow .2s;
+    box-shadow: 0 1px 4px #b8e0d222;
+}
+
+.opciones-rapidas button[data-opcion=whatsapp] {
+    background: #d4f5e9;
+    color: #128c7e;
+    font-weight: 700;
+    border: 2px solid #81b29a;
+    box-shadow: 0 2px 8px #81b29a44;
+    position: relative;
+}
+
+.opciones-rapidas button[data-opcion=whatsapp]::before {
+    content: "💬 ";
+    font-size: 1.1em;
+    margin-right: .2em;
+}
+
+.opciones-rapidas button[data-opcion=whatsapp]:hover {
+    background: #81b29a;
+    color: #fff;
+    box-shadow: 0 4px 16px #81b29a44;
+}
+
+.opciones-rapidas button:hover {
+    background: #f7d6e0;
+    color: #3a3a3a;
+    box-shadow: 0 4px 16px #f7d6e044;
+}
+
+.info-consulta {
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px #0005;
+}
+
+.info-consulta h2 {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: #ffb347;
+}
+
+.info-consulta ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.info-consulta li {
+    margin-bottom: .5em;
+    font-size: 1.05em;
+}
+
+#menu-list {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem 2rem;
+    justify-items: center;
+    min-height: 120px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu-categoria h3 {
+    color: #fff;
+    font-size: 1.3em;
+    margin-bottom: .7rem;
+    letter-spacing: .5px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    background: #faedcd;
+    border-radius: 18px;
+    margin-bottom: 1.2rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 12px #b8e0d244;
+    border: 1.5px solid #b8e0d233;
+    width: 100%;
+    min-height: 200px;
+}
+
+.menu-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: #e0ece4;
+    border: 2.5px solid #b8e0d2;
+    margin-bottom: 0;
+}
+
+.menu-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.menu-precio {
+    color: #f39088;
+    font-weight: 700;
+    font-size: 1.15em;
+    margin-top: .2em;
+}
+
+.asistente-container {
+    background: #f7f6fa;
+    box-shadow: 0 8px 32px #b8e0d244, 0 1.5px 8px #f4978e33;
+    border: 2px solid #b8e0d2;
+    border-radius: 32px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    min-height: 420px;
+    margin: 2.5rem auto 0;
+    padding: 2rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.btn-categoria {
+    background: linear-gradient(90deg, #f4978e, #b8e0d2);
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    padding: .6em 1.4em;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #b8e0d244;
+    transition: background .2s, color .2s, box-shadow .2s, transform .2s;
+    margin-bottom: .2em;
+}
+
+.btn-categoria:hover,
+.btn-categoria:focus {
+    background: linear-gradient(90deg, #b8e0d2, #f4978e);
+    color: #fff;
+    box-shadow: 0 4px 16px #f4978e44;
+    transform: translateY(-2px) scale(1.05);
+    outline: none;
+}
+
+.logo-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    opacity: .08;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+#app {
+    max-width: 650px;
+    margin: 2.5rem auto 0;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.chat-box {
+    background: #f6dfeb;
+    border-radius: 12px;
+    min-height: 220px;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    font-size: 1.1em;
+    border: 1px solid #f4978e33;
+}
+
+.mensaje {
+    margin-bottom: .7em;
+    padding: .5em 1em;
+    border-radius: 8px;
+    max-width: 90%;
+    word-break: break-word;
+}
+
+.mensaje.usuario {
+    background: #b8e0d2;
+    color: #3a3a3a;
+    align-self: flex-end;
+    margin-left: auto;
+    border: 1px solid #b6cfc7;
+}
+
+.mensaje.asistente {
+    background: #f7d6e0;
+    color: #3a3a3a;
+    align-self: flex-start;
+    margin-right: auto;
+    border: 1px solid #f4978e33;
+}
+
+#pregunta-form {
+    display: flex;
+    gap: .5rem;
+}
+
+#pregunta-input {
+    flex: 1;
+    padding: .5em;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+}
+
+#pregunta-input:focus {
+    outline: 2px solid #535bf2;
+}
+
+#pregunta-form button {
+    background: #535bf2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: .5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+#pregunta-form button:hover {
+    background: #646cff;
+}

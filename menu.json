@@ -1,0 +1,141 @@
+[
+    {
+        "categoria": "Cortes de Carne",
+        "items": [
+            {
+                "nombre": "Asado de Tira",
+                "descripcion": "Tira de carne asada a la leña, servida con papas arrugadas y mojo verde.",
+                "precio": 15.99,
+                "imagen": "public/asado-tiras.webp"
+            },
+            {
+                "nombre": "Bife de Chorizo",
+                "descripcion": "Bife de chorizo argentino, servido con papas asadas y ensalada de lechuga.",
+                "precio": 18.99,
+                "imagen": "public/bife-chorizo.webp"
+            },
+            {
+                "nombre": "Costillas de Cerdo",
+                "descripcion": "Costillas de cerdo asadas a la leña, servidas con puré de papas y ensalada de col.",
+                "precio": 14.99,
+                "imagen": "public/costilla-cerdo.webp"
+            }
+        ]
+    },
+    {
+        "categoria": "Carnes a la Parrilla",
+        "items": [
+            {
+                "nombre": "Churrasco",
+                "descripcion": "Churrasco de carne asada a la parrilla, servido con papas asadas y ensalada de lechuga.",
+                "precio": 16.99,
+                "imagen": "public/churrasco.jpg"
+            },
+            {
+                "nombre": "Chorizo Argentino",
+                "descripcion": "Chorizo argentino asado a la parrilla, servido con papas arrugadas y mojo verde.",
+                "precio": 12.99,
+                "imagen": "public/chorizo-argentino.jpg"
+            },
+            {
+                "nombre": "Morcilla",
+                "descripcion": "Morcilla asada a la parrilla, servida con arroz con frijoles y plátanos maduros.",
+                "precio": 13.99,
+                "imagen": "public/morcilla.jpg"
+            }
+        ]
+    },
+    {
+        "categoria": "Especiales de Carne",
+        "items": [
+            {
+                "nombre": "Parrillada",
+                "descripcion": "Parrillada de carnes variadas (asado de tira, bife de chorizo, chorizo argentino, morcilla), servida con papas asadas y ensalada de lechuga.",
+                "precio": 39.99,
+                "imagen": "public/parrillada.jpg"
+            },
+            {
+                "nombre": "Combo de Carnes",
+                "descripcion": "Combo de carnes variadas (asado de tira, costillas de cerdo, chorizo argentino), servido con papas arrugadas y mojo verde.",
+                "precio": 29.99,
+                "imagen": "public/combo-carnes.jpg"
+            }
+        ]
+    },
+    {
+        "categoria": "Acompañamientos",
+        "items": [
+            {
+                "nombre": "Papas Arrugadas",
+                "descripcion": "Papas pequeñas arrugadas con mojo verde.",
+                "precio": 3.99,
+                "imagen": "public/papas-arrugadas.jpg"
+            },
+            {
+                "nombre": "Arroz con Frijoles",
+                "descripcion": "Arroz blanco con frijoles negros.",
+                "precio": 2.99,
+                "imagen": "public/arroz-frijoles.jpg"
+            },
+            {
+                "nombre": "Ensalada de Lechuga",
+                "descripcion": "Ensalada de lechuga con tomate y pepino.",
+                "precio": 2.99,
+                "imagen": "public/ensalada-lechuga.jpg"
+            }
+        ]
+    },
+    {
+        "categoria": "Bebidas",
+        "items": [
+            {
+                "nombre": "Fresco de Horchata",
+                "descripcion": "Fresco tradicional de horchata.",
+                "precio": 2.00,
+                "imagen": "public/horchata.jpg"
+            },
+            {
+                "nombre": "Fresco de Jamaica",
+                "descripcion": "Fresco natural de flor de jamaica.",
+                "precio": 1.50,
+                "imagen": "public/agua-jamaica.jpg"
+            },
+            {
+                "nombre": "Fresco de Tamarindo",
+                "descripcion": "Fresco natural de tamarindo.",
+                "precio": 1.50,
+                "imagen": "public/agua-tamarindo.png"
+            },
+            {
+                "nombre": "Fresco de Ensalada",
+                "descripcion": "Fresco de ensalada de frutas.",
+                "precio": 2.00,
+                "imagen": "public/agua-ensalada.jpg"
+            },
+            {
+                "nombre": "Gaseosa Cocacola",
+                "descripcion": "Cocacola en botella.",
+                "precio": 2.00,
+                "imagen": "public/cocacola.jpg"
+            },
+            {
+                "nombre": "Gaseosa de Sabores",
+                "descripcion": "Gaseosa de diferentes sabores.",
+                "precio": 1.50,
+                "imagen": "public/gaseosa-sabores.jpg"
+            },
+            {
+                "nombre": "Agua 1/2 litro",
+                "descripcion": "Agua embotellada de medio litro.",
+                "precio": 1.50,
+                "imagen": "public/agua1.jpg"
+            },
+            {
+                "nombre": "Agua 1 litro",
+                "descripcion": "Agua embotellada de un litro.",
+                "precio": 2.25,
+                "imagen": "public/agua2.jpg"
+            }
+        ]
+    }
+]
